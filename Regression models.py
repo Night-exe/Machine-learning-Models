@@ -1,6 +1,7 @@
 # A new file for Machine learning model
 
-# Libraries to be used
+# Libraries to be used 
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -59,8 +60,6 @@ rf_test_r2 = r2_score(y_test, y_rf_test_pred)
 # Organising the data in a dataframe for cleaniness
 rf_results = pd.DataFrame(["Random Forest Regression", rf_train_mse, rf_train_r2, rf_test_mse, rf_test_r2]).transpose()
 rf_results.columns = ['Method', 'Training MSE', 'Training R2', 'Testing MSE', 'Testing R2']
-
-
 # print(lr_results)
 
 # Comparision of both the models
@@ -80,5 +79,8 @@ plt.xlabel('Experimental LogS')
 plt.ylabel('Predict LogS')
 
 # Showing the Graph
+
+
+##
 
 plt.show()
